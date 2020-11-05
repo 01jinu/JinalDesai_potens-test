@@ -1,0 +1,14 @@
+def find3Numbers(Ar, arr_size, sum):
+
+    for i in range( 0, arr_size-2):
+
+        for j in range(i + 1, arr_size-1): 
+
+            for k in range(j + 1, arr_size):
+                if Ar[i] + Arr[j] + Ar[k] == sum:
+                    print("OutPut", Ar[i], ", ", Ar[j], ", ", Ar[k])
+ 
+Ar = [1, 2,6,9,3]
+sum = 13
+arr_size = len(Ar)
+find3Numbers(Ar, arr_size, sum)
